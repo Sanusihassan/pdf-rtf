@@ -14,7 +14,6 @@ export const edit_page = {
   },
   loader_text: "please wait...",
   add_more_button: "Add more files",
-  // translate the values of this object to french.
   action_buttons: {
     merge_pdf: "Merge PDF",
   },
