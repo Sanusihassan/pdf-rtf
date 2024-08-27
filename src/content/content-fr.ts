@@ -57,6 +57,13 @@ export const edit_page: _edit_page = {
   page: "page",
 };
 
+export const footer: _footer = {
+  brand: "PDFEquips",
+  terms: "conditions",
+  conditions: "conditions d'utilisation",
+  privacy_policy: "politique de confidentialité",
+};
+
 export const errors: _errors = {
   EMPTY_FILE: {
     message: "Le fichier est vide. Veuillez choisir un fichier valide.",

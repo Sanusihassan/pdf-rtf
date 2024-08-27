@@ -7,9 +7,14 @@ import {
   tool,
   tools,
   downloadFile,
+  footer,
 } from "../src/content/content";
 import { useRouter } from "next/router";
 import { OpenGraph } from "pdfequips-open-graph/OpenGraph";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
+import HowTo from "@/components/HowTo";
+import { howToType } from "@/src/how-to/how-to-en";
 
 export type data_type = {
   title: string;
@@ -18,6 +23,7 @@ export type data_type = {
   type: string;
   to: string;
   seoTitle: string;
+  features: { title: string; description: string }[]
 };
 
 export async function getStaticPaths() {
@@ -85,6 +91,19 @@ export default ({ item }: { item: data_type }) => {
         page={edit_page.page}
         downloadFile={downloadFile}
       />
+      <div className="container">
+        <Features
+          features={item.features}
+        />
+      </div>
+      <div className="container">
+        <HowTo
+          howTo={howToSchema as howToType}
+          alt={item.seoTitle}
+          imgSrc={item.to.replace("/", "")}
+        />
+      </div>
+      <Footer footer={footer} title={item.seoTitle.split("-")[1]} />
     </>
   );
 };

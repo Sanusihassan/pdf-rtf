@@ -75,6 +75,19 @@ export default ({ item, lang }: { item: data_type; lang: string }) => {
         page={edit_page.page}
         downloadFile={downloadFile}
       />
+      <div className="container">
+        <Features
+          features={item.features as { title: string; description: string }[]}
+        />
+      </div>
+      <div className="container">
+        <HowTo
+          howTo={howToSchema as howToType}
+          alt={item.seoTitle}
+          imgSrc={item.to.replace("/", "")}
+        />
+      </div>
+      <Footer footer={footer} title={item.seoTitle.split("-")[1]} />
     </>
   );
 };

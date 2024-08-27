@@ -51,6 +51,14 @@ export const tools: _tools = {
   drop_files: "在此处拖放文件",
 };
 
+export const footer: _footer = {
+  brand: "PDFEquips",
+  terms: "条款",
+  conditions: "条件",
+  privacy_policy: "隐私政策",
+};
+
+
 export const errors: _errors = {
   EMPTY_FILE: {
     message: "文件为空，请选择一个有效的文件。",

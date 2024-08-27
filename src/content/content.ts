@@ -1,10 +1,26 @@
 export const tool = {
-  Merge_PDF: {
-    title: "Merge PDF",
-    description: "Combine multiple PDF files into one document",
-    color: "var(--red)",
+  Compress_PDF: {
+    title: "Compress PDF",
+    seoTitle: "Compress PDFs Online - Free File Size Reducer",
+    description: "Reduce the file size of a PDF while maintaining quality",
+    color: "var(--green)",
     type: ".pdf",
-    to: "/merge-pdf",
+    to: "/compress-pdf",
+    features: [
+      {
+        title: "Versatile PDF Compression",
+        description: "Get fast and reliable results that you can count on every time, Choose from a range of compression levels to adjust your file size without compromising document quality"
+      },
+      {
+        title: "No need for email registration",
+        description: "Start compressing your PDFs right away - no email sign-up, no need for credit card details Just upload your document and compress it as needed"
+      },
+      {
+        title: "Maintaining quality all the time",
+        description: "PDFEquips uses advanced technology to optimize both the size and quality of images in your PDFs This ensures that you achieve significantly smaller file sizes without compromising the fidelity of your documents"
+      }
+    ],
+    keywords: "compress PDF, compress PDF online, reduce PDF file size, free PDF compression, PDF file compressor, online PDF compressor, PDF compression tool, PDF size reduction, PDF file size reducer, compress PDF documents, shrink PDF files, secure PDF compression, PDF optimizer, compress PDFs for free, online PDF file compressor, no registration PDF compression, reduce PDF size online, free PDF shrinker, fast PDF compression"
   },
 };
 
@@ -40,6 +56,13 @@ export const downloadFile = {
   backto: {
     "merge-pdf": "Back To Merge PDF",
   },
+};
+
+export const footer = {
+  brand: "PDFEquips",
+  terms: "terms",
+  conditions: "conditions",
+  privacy_policy: "privacy policy",
 };
 
 export const errors = {

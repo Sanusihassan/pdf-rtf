@@ -50,6 +50,13 @@ export const edit_page: _edit_page = {
   page: "صفحة واحدة",
 };
 
+export const footer: _footer = {
+  brand: "PDFEquips",
+  terms: "الشروط",
+  conditions: "والأحكام",
+  privacy_policy: "سياسة الخصوصية",
+};
+
 export const errors: _errors = {
   EMPTY_FILE: {
     message: "الملف فارغ. يرجى اختيار ملف صالح.",
