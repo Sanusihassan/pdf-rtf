@@ -9,14 +9,54 @@ import type {
 } from "../../content";
 
 export const tool: _tool = {
-  Merge_PDF: {
-    title: "دمج PDF",
-    description: "دمج ملفات PDF متعددة في مستند واحد",
-    color: "var(--red)",
-    type: ".pdf",
-    to: "/merge-pdf",
+  PSD_to_PDF: {
+    title: "تحويل PSD إلى PDF",
+    seoTitle: "محول PSD إلى PDF - أداة مجانية عبر الإنترنت",
+    description: "حوّل ملفات الفوتوشوب (PSD) الخاصة بك إلى ملفات PDF عالية الجودة بسهولة.",
+    color: "#001833",
+    type: ".psd",
+    to: "/psd-to-pdf",
+    features: [
+      {
+        title: "تحويل سلس من PSD إلى PDF",
+        description: "حوّل ملفات PSD الخاصة بك إلى PDF مع الحفاظ على جودة الصور والطبقات، مما يضمن إخراجاً احترافياً."
+      },
+      {
+        title: "تحويل دفعات",
+        description: "حوّل عدة ملفات PSD إلى PDF دفعة واحدة، مما يوفر الوقت والجهد."
+      },
+      {
+        title: "آمن وخاص",
+        description: "تتم معالجة ملفاتك بأمان دون الحاجة إلى تسجيل، مما يضمن حماية خصوصيتك."
+      }
+    ],
+    keywords: "تحويل PSD إلى PDF, محول PSD إلى PDF, أداة مجانية لتحويل PSD إلى PDF, تحويل PSD إلى PDF عبر الإنترنت, فوتوشوب إلى PDF, تحويل دفعات PSD إلى PDF, PSD إلى PDF عالي الجودة"
   },
+  PDF_to_PSD: {
+    title: "تحويل PDF إلى PSD",
+    seoTitle: "تحويل PDF إلى PSD مجاناً عبر الإنترنت - تحويل سهل وسريع",
+    description: "حوّل ملفات PDF الخاصة بك إلى ملفات فوتوشوب (PSD) قابلة للتعديل بسهولة.",
+    color: "#001833",
+    type: ".pdf",
+    to: "/pdf-to-psd",
+    features: [
+      {
+        title: "تحويل عالي الجودة من PDF إلى PSD",
+        description: "حوّل مستندات PDF الخاصة بك إلى ملفات PSD بطبقات متعددة، مع الحفاظ على جميع العناصر المرئية للتعديل السهل في الفوتوشوب."
+      },
+      {
+        title: "طبقات قابلة للتعديل",
+        description: "يتم تحويل كل عنصر من عناصر PDF إلى طبقة قابلة للتعديل في ملف PSD الناتج، مما يتيح لك التحكم الكامل في تصميمك."
+      },
+      {
+        title: "سريع وموثوق",
+        description: "اختبر سرعات تحويل سريعة دون المساس بجودة أو سلامة ملفاتك."
+      }
+    ],
+    keywords: "تحويل PDF إلى PSD, محول PDF إلى PSD, أداة مجانية لتحويل PDF إلى PSD, تحويل PDF إلى PSD عبر الإنترنت, PDF إلى فوتوشوب, استخراج الطبقات من PDF, PSD قابل للتعديل من PDF, PDF إلى PSD بطبقات"
+  }
 };
+
 
 export const tools: _tools = {
   select: "اختر",
@@ -25,30 +65,38 @@ export const tools: _tools = {
   drop_files: "قم بوضع الملفات هنا",
 };
 
+export const edit_page: _edit_page = {
+  edit_page_titles: {
+    pdf_to_psd: "خيارات تحويل PDF إلى PSD",
+    psd_to_pdf: "خيارات تحويل PSD إلى PDF",
+  },
+  loader_text: "يرجى الانتظار...",
+  add_more_button: "أضف المزيد من الملفات",
+  action_buttons: {
+    pdf_to_psd: "تحويل إلى PSD",
+    psd_to_pdf: "تحويل إلى PDF",
+  },
+  pages: "صفحات",
+  page: "صفحة",
+};
+
 export const downloadFile: _downloadFile = {
   titles: {
-    "merge-pdf": ["تم دمج ملفات ال PDF!", "تم دمج ملف ال PDF!"],
+    "pdf-to-psd": ["تم تحويل ملف PDF إلى PSD!", "تم تحويل ملفات PDF إلى PSD!"],
+    "psd-to-pdf": ["تم تحويل ملف PSD إلى PDF!", "تم تحويل ملفات PSD إلى PDF!"],
   },
+
   btnText: {
-    "merge-pdf": ["تحميل ملفات PDF المدموجة", "تحميل ملف PDF مدموج"],
+    "pdf-to-psd": ["تحميل ملف PSD المحول", "تحميل ملفات PSD المحولة"],
+    "psd-to-pdf": ["تحميل ملف PDF المحول", "تحميل ملفات PDF المحولة"],
   },
+
   backto: {
-    "merge-pdf": "العودة إلى دمج ملفات PDF",
+    "pdf-to-psd": "العودة إلى تحويل PDF إلى PSD",
+    "psd-to-pdf": "العودة إلى تحويل PSD إلى PDF",
   },
 };
 
-export const edit_page: _edit_page = {
-  edit_page_titles: {
-    merge_pdf: "خيارات دمج ملف PDF",
-  },
-  loader_text: "يرجى الانتظار...",
-  add_more_button: "إضافة المزيد من الملفات",
-  action_buttons: {
-    merge_pdf: "دمج PDF",
-  },
-  pages: "صفحة",
-  page: "صفحة واحدة",
-};
 
 export const footer: _footer = {
   brand: "PDFEquips",

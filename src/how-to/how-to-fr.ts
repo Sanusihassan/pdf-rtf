@@ -1,61 +1,59 @@
 import { _howToSchemas } from "./how-to-en";
 
 export const howToSchemas: _howToSchemas = {
-  PDFToEPUBHowTo: {
+  PDFToPSDHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "Comment convertir un PDF en EPUB",
-    description:
-      "Guide étape par étape pour convertir un fichier PDF au format EPUB.",
+    name: "Comment Convertir PDF en PSD",
+    description: "Guide étape par étape pour convertir un fichier PDF au format PSD.",
     step: [
       {
         "@type": "HowToStep",
         name: "Étape 1",
-        text: "Ouvrez l'outil de conversion de PDF en EPUB sur PDFEquips.",
+        text: "Ouvrez l'outil PDF en PSD sur PDFEquips.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 2",
-        text: "Glissez et déposez votre fichier PDF ou cliquez sur le bouton 'Sélectionner des fichiers PDF' pour choisir un fichier PDF depuis votre appareil.",
+        text: "Faites glisser et déposer votre fichier PDF ou cliquez sur le bouton 'Sélectionner des fichiers PDF' pour choisir un fichier PDF depuis votre appareil.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 3",
-        text: "Après avoir téléchargé le fichier, cliquez sur le bouton 'Convertir PDF en EPUB'.",
+        text: "Une fois le fichier téléchargé, cliquez sur le bouton 'Convertir PDF en PSD'.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 4",
-        text: "Attendez que la conversion se termine, puis téléchargez le fichier EPUB.",
+        text: "Attendez que la conversion soit terminée, puis téléchargez le fichier PSD.",
       },
     ],
   },
-  EPUBToPDFHowTo: {
+  PSDToPDFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "Comment convertir un EPUB en PDF",
-    description:
-      "Guide étape par étape pour convertir un fichier EPUB au format PDF.",
+    name: "Comment Convertir PSD en PDF",
+    description: "Guide étape par étape pour convertir un fichier PSD au format PDF.",
     step: [
       {
         "@type": "HowToStep",
         name: "Étape 1",
-        text: "Ouvrez l'outil de conversion de EPUB en PDF sur PDFEquips.",
+        text: "Ouvrez l'outil PSD en PDF sur PDFEquips.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 2",
-        text: "Glissez et déposez votre fichier EPUB ou cliquez sur le bouton 'Sélectionner des fichiers EPUB' pour choisir un fichier EPUB depuis votre appareil.",
+        text: "Faites glisser et déposer votre fichier PSD ou cliquez sur le bouton 'Sélectionner des fichiers PSD' pour choisir un fichier PSD depuis votre appareil.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 3",
-        text: "Après avoir téléchargé le fichier, cliquez sur le bouton 'Convertir EPUB en PDF'.",
+        text: "Une fois le fichier téléchargé, cliquez sur le bouton 'Convertir PSD en PDF'.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 4",
-        text: "Attendez que la conversion se termine, puis téléchargez le fichier PDF.",
+        text: "Attendez que la conversion soit terminée, puis téléchargez le fichier PDF.",
       },
     ],
   },

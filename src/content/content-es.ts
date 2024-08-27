@@ -10,26 +10,52 @@ import type {
 } from "../../content";
 
 export const tool: _tool = {
-  Merge_PDF: {
-    title: "Combinar PDF",
-    description: "Combina varios archivos PDF en un solo documento",
-    color: "var(--red)",
+  PSD_to_PDF: {
+    title: "Convertir PSD a PDF",
+    seoTitle: "Convertidor de PSD a PDF - Herramienta Gratis en Línea",
+    description: "Convierte fácilmente tus archivos de Photoshop (PSD) en PDFs de alta calidad.",
+    color: "#001833",
+    type: ".psd",
+    to: "/psd-to-pdf",
+    features: [
+      {
+        title: "Conversión fluida de PSD a PDF",
+        description: "Convierte tus archivos PSD a PDF manteniendo la calidad de tus imágenes y capas, garantizando un resultado profesional."
+      },
+      {
+        title: "Conversión por lotes",
+        description: "Convierte varios archivos PSD a PDF de una vez, ahorrando tiempo y esfuerzo."
+      },
+      {
+        title: "Seguro y privado",
+        description: "Tus archivos se procesan de manera segura sin necesidad de registrarse, asegurando que tu privacidad esté protegida."
+      }
+    ],
+    keywords: "PSD a PDF, convertir PSD a PDF, convertidor gratuito de PSD a PDF, conversión de PSD a PDF en línea, Photoshop a PDF, conversión por lotes de PSD a PDF, PSD a PDF de alta calidad"
+  },
+  PDF_to_PSD: {
+    title: "Convertir PDF a PSD",
+    seoTitle: "Convertir PDF a PSD Gratis en Línea - Transformación Fácil y Rápida",
+    description: "Transforma tus archivos PDF en archivos de Photoshop (PSD) editables con facilidad.",
+    color: "#001833",
     type: ".pdf",
-    to: "/merge-pdf",
-  },
-};
-
-export const edit_page: _edit_page = {
-  edit_page_titles: {
-    merge_pdf: "Opciones para fusionar PDF",
-  },
-  loader_text: "Por favor espera...",
-  add_more_button: "Agrega más archivos",
-  action_buttons: {
-    merge_pdf: "Combinar PDF",
-  },
-  pages: "paginas",
-  page: "página",
+    to: "/pdf-to-psd",
+    features: [
+      {
+        title: "Conversión de alta calidad de PDF a PSD",
+        description: "Convierte tus documentos PDF en archivos PSD con capas, manteniendo todos los elementos visuales para una fácil edición en Photoshop."
+      },
+      {
+        title: "Capas editables",
+        description: "Cada elemento de tu PDF se convierte en una capa editable en el archivo PSD resultante, dándote control total sobre tu diseño."
+      },
+      {
+        title: "Rápido y confiable",
+        description: "Experimenta tiempos de conversión rápidos sin comprometer la calidad o la integridad de tus archivos."
+      }
+    ],
+    keywords: "PDF a PSD, convertir PDF a PSD, convertidor gratuito de PDF a PSD, conversión de PDF a PSD en línea, PDF a Photoshop, extraer capas de PDF, PSD editable a partir de PDF, PDF a PSD con capas"
+  }
 };
 
 export const tools: _tools = {
@@ -39,23 +65,38 @@ export const tools: _tools = {
   drop_files: "Arrastra los archivos aquí",
 };
 
+export const edit_page: _edit_page = {
+  edit_page_titles: {
+    pdf_to_psd: "Opciones de PDF a PSD",
+    psd_to_pdf: "Opciones de PSD a PDF",
+  },
+  loader_text: "por favor espera...",
+  add_more_button: "Agregar más archivos",
+  action_buttons: {
+    pdf_to_psd: "Convertir a PSD",
+    psd_to_pdf: "Convertir a PDF",
+  },
+  pages: "páginas",
+  page: "página",
+};
+
 export const downloadFile: _downloadFile = {
   titles: {
-    "merge-pdf": [
-      "¡Combinación de archivos PDF exitosa!",
-      "¡Combinación de archivo PDF exitosa!",
-    ],
+    "pdf-to-psd": ["¡El archivo PDF se ha convertido a PSD!", "¡Los archivos PDF se han convertido a PSD!"],
+    "psd-to-pdf": ["¡El archivo PSD se ha convertido a PDF!", "¡Los archivos PSD se han convertido a PDF!"],
   },
+
   btnText: {
-    "merge-pdf": [
-      "Descargar archivos PDF combinados",
-      "Descargar archivo PDF combinado",
-    ],
+    "pdf-to-psd": ["Descargar archivo PSD convertido", "Descargar archivos PSD convertidos"],
+    "psd-to-pdf": ["Descargar archivo PDF convertido", "Descargar archivos PDF convertidos"],
   },
+
   backto: {
-    "merge-pdf": "Volver a unir PDF",
+    "pdf-to-psd": "Volver a PDF a PSD",
+    "psd-to-pdf": "Volver a PSD a PDF",
   },
 };
+
 
 export const footer: _footer = {
   brand: "PDFEquips",

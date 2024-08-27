@@ -1,40 +1,50 @@
 export const tool = {
-  Compress_PDF: {
-    title: "Compress PDF",
-    seoTitle: "Compress PDFs Online - Free File Size Reducer",
-    description: "Reduce the file size of a PDF while maintaining quality",
-    color: "var(--green)",
-    type: ".pdf",
-    to: "/compress-pdf",
+  PSD_to_PDF: {
+    title: "Convert PSD to PDF",
+    seoTitle: "PSD to PDF Converter - Free Online Tool",
+    description: "Easily convert your Photoshop files (PSD) to high-quality PDFs.",
+    color: "#001833",
+    type: ".psd",
+    to: "/psd-to-pdf",
     features: [
       {
-        title: "Versatile PDF Compression",
-        description: "Get fast and reliable results that you can count on every time, Choose from a range of compression levels to adjust your file size without compromising document quality"
+        title: "Seamless PSD to PDF Conversion",
+        description: "Convert your PSD files to PDF while preserving the quality of your images and layers, ensuring a professional output."
       },
       {
-        title: "No need for email registration",
-        description: "Start compressing your PDFs right away - no email sign-up, no need for credit card details Just upload your document and compress it as needed"
+        title: "Batch Conversion",
+        description: "Convert multiple PSD files to PDF in one go, saving time and effort."
       },
       {
-        title: "Maintaining quality all the time",
-        description: "PDFEquips uses advanced technology to optimize both the size and quality of images in your PDFs This ensures that you achieve significantly smaller file sizes without compromising the fidelity of your documents"
+        title: "Secure and Private",
+        description: "Your files are processed securely with no need for registration, ensuring your privacy is protected."
       }
     ],
-    keywords: "compress PDF, compress PDF online, reduce PDF file size, free PDF compression, PDF file compressor, online PDF compressor, PDF compression tool, PDF size reduction, PDF file size reducer, compress PDF documents, shrink PDF files, secure PDF compression, PDF optimizer, compress PDFs for free, online PDF file compressor, no registration PDF compression, reduce PDF size online, free PDF shrinker, fast PDF compression"
+    keywords: "PSD to PDF, convert PSD to PDF, free PSD to PDF converter, online PSD to PDF conversion, Photoshop to PDF, batch PSD to PDF, high-quality PSD to PDF"
   },
-};
-
-export const edit_page = {
-  edit_page_titles: {
-    merge_pdf: "Merge PDF options",
-  },
-  loader_text: "please wait...",
-  add_more_button: "Add more files",
-  action_buttons: {
-    merge_pdf: "Merge PDF",
-  },
-  pages: "pages",
-  page: "page",
+  PDF_to_PSD: {
+    title: "Convert PDF to PSD",
+    seoTitle: "Convert PDF to PSD Free Online - Easy & Fast Transformation",
+    description: "Transform your PDF files into editable Photoshop (PSD) files with ease.",
+    color: "#001833",
+    type: ".pdf",
+    to: "/pdf-to-psd",
+    features: [
+      {
+        title: "High-Quality PDF to PSD Conversion",
+        description: "Convert your PDF documents into layered PSD files, retaining all visual elements for easy editing in Photoshop."
+      },
+      {
+        title: "Editable Layers",
+        description: "Each element of your PDF is converted into an editable layer in the resulting PSD file, giving you full control over your design."
+      },
+      {
+        title: "Fast and Reliable",
+        description: "Experience quick conversion times without compromising the quality or integrity of your files."
+      }
+    ],
+    keywords: "PDF to PSD, convert PDF to PSD, free PDF to PSD converter, online PDF to PSD conversion, PDF to Photoshop, extract layers from PDF, editable PSD from PDF, PDF to layered PSD"
+  }
 };
 
 export const tools = {
@@ -44,19 +54,39 @@ export const tools = {
   drop_files: "Drag files here",
 };
 
+
+export const edit_page = {
+  edit_page_titles: {
+    pdf_to_psd: "PDF to PSD options",
+    psd_to_pdf: "PSD to PDF options",
+  },
+  loader_text: "please wait...",
+  add_more_button: "Add more files",
+  action_buttons: {
+    pdf_to_psd: "Convert to PSD",
+    psd_to_pdf: "Convert to PDF",
+  },
+  pages: "pages",
+  page: "page",
+};
+
 export const downloadFile = {
   titles: {
-    "merge-pdf": ["PDF files have been merged!", "PDF file has been merged!"],
+    "pdf-to-psd": ["PDF file has been converted to PSD!", "PDF files have been converted to PSD!"],
+    "psd-to-pdf": ["PSD file has been converted to PDF!", "PSD files have been converted to PDF!"],
   },
 
   btnText: {
-    "merge-pdf": ["Download Merged PDF files", "Download Merged PDF file"],
+    "pdf-to-psd": ["Download Converted PSD file", "Download Converted PSD files"],
+    "psd-to-pdf": ["Download Converted PDF file", "Download Converted PDF files"],
   },
 
   backto: {
-    "merge-pdf": "Back To Merge PDF",
+    "pdf-to-psd": "Back To PDF to PSD",
+    "psd-to-pdf": "Back To PSD to PDF",
   },
 };
+
 
 export const footer = {
   brand: "PDFEquips",

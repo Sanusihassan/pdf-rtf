@@ -14,14 +14,14 @@ import { OpenGraph } from "pdfequips-open-graph/OpenGraph";
 import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import HowTo from "@/components/HowTo";
-import { howToType } from "@/src/how-to/how-to-en";
+import { howToSchemas, howToType } from "@/src/how-to/how-to-en";
 
 export type data_type = {
   title: string;
   description: string;
   color: string;
   type: string;
-  to: string;
+  to: "/psd-to-pdf" | "/pdf-to-psd";
   seoTitle: string;
   features: { title: string; description: string }[]
 };
@@ -56,6 +56,8 @@ export default ({ item }: { item: data_type }) => {
     description: item.description,
     url: `https://www.pdfequips.com${asPath}`,
   };
+
+  const howToSchema = item.to === "/pdf-to-psd" ? howToSchemas.PDFToPSDHowTo : howToSchemas.PSDToPDFHowTo;
   return (
     <>
       <Head>
@@ -93,8 +95,7 @@ export default ({ item }: { item: data_type }) => {
       />
       <div className="container">
         <Features
-          features={item.features}
-        />
+          features={item.features} tool={item.to} />
       </div>
       <div className="container">
         <HowTo
@@ -110,5 +111,6 @@ export default ({ item }: { item: data_type }) => {
 
 // export default ToolPage;
 export const routes = {
-  "/merge-pdf": { item: tool["Merge_PDF"] },
+  "/pdf-to-psd": { item: tool["PDF_to_PSD"] },
+  "/psd-to-pdf": { item: tool["PSD_to_PDF"] },
 };

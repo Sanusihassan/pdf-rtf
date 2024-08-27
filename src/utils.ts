@@ -192,13 +192,7 @@ export const validateFiles = (
 
   let allowedMimeTypes = [
     "application/pdf",
-    "text/html",
-    "image/jpeg",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "application/vnd.ms-powerpoint",
-    "application/vnd.ms-excel",
+    "image/vnd.adobe.photoshop"
   ];
   // validation for merge-pdf page & empty files
   if (state.path == "merge-pdf" && files.length <= 1) {
@@ -218,16 +212,8 @@ export const validateFiles = (
     let file_extension = file.name.split(".").pop()?.toUpperCase() || "";
     // this contains all types and some special types that might potentially be of than one extension
     const types = [
-      "ppt",
-      "pptx",
-      "doc",
-      "docx",
-      "xls",
-      "xlsx",
-      "html",
-      "htm",
-      "jpg",
       "pdf",
+      "psd"
     ];
 
     if (!file || !file.name) {

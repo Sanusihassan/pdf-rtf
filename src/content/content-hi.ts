@@ -10,45 +10,85 @@ import type {
 } from "../../content";
 
 export const tool: _tool = {
-  Merge_PDF: {
-    title: "पीडीएफ विलय",
-    description: "एक दस्तावेज में कई पीडीएफ फ़ाइलों को जोड़ें",
-    color: "var(--red)",
+  PSD_to_PDF: {
+    title: "PSD को PDF में बदलें",
+    seoTitle: "PSD से PDF कनवर्टर - मुफ्त ऑनलाइन टूल",
+    description: "अपने फ़ोटोशॉप (PSD) फ़ाइलों को आसानी से उच्च-गुणवत्ता वाले PDFs में बदलें।",
+    color: "#001833",
+    type: ".psd",
+    to: "/psd-to-pdf",
+    features: [
+      {
+        title: "PSD से PDF में सहज रूपांतरण",
+        description: "अपने PSD फ़ाइलों को PDF में बदलें, और अपनी छवियों और परतों की गुणवत्ता बनाए रखें, जिससे आपको एक पेशेवर परिणाम मिलता है।"
+      },
+      {
+        title: "बैच रूपांतरण",
+        description: "एक ही बार में कई PSD फ़ाइलों को PDF में बदलें, समय और प्रयास बचाएं।"
+      },
+      {
+        title: "सुरक्षित और निजी",
+        description: "आपकी फ़ाइलें सुरक्षित रूप से प्रोसेस की जाती हैं, और किसी पंजीकरण की आवश्यकता नहीं है, जिससे आपकी गोपनीयता सुरक्षित रहती है।"
+      }
+    ],
+    keywords: "PSD से PDF, PSD को PDF में बदलें, मुफ्त PSD से PDF कनवर्टर, ऑनलाइन PSD से PDF रूपांतरण, फ़ोटोशॉप से PDF, बैच PSD से PDF, उच्च-गुणवत्ता वाला PSD से PDF"
+  },
+  PDF_to_PSD: {
+    title: "PDF को PSD में बदलें",
+    seoTitle: "PDF को PSD में मुफ्त ऑनलाइन बदलें - आसान और तेज़ रूपांतरण",
+    description: "अपने PDF फ़ाइलों को आसानी से संपादन योग्य फ़ोटोशॉप (PSD) फ़ाइलों में बदलें।",
+    color: "#001833",
     type: ".pdf",
-    to: "/merge-pdf",
-  },
-};
-
-export const downloadFile: _downloadFile = {
-  titles: {
-    "merge-pdf": [
-      "PDF फ़ाइलें मर्ज़ की गई हैं!",
-      "PDF फ़ाइल को मर्ज़ किया गया है!",
+    to: "/pdf-to-psd",
+    features: [
+      {
+        title: "उच्च-गुणवत्ता वाला PDF से PSD रूपांतरण",
+        description: "अपने PDF दस्तावेज़ों को परतों वाले PSD फ़ाइलों में बदलें, जिससे सभी दृश्य तत्व बनाए रहें और फ़ोटोशॉप में आसानी से संपादन किया जा सके।"
+      },
+      {
+        title: "संपादन योग्य परतें",
+        description: "आपकी PDF फ़ाइल का प्रत्येक तत्व परिणामस्वरूप PSD फ़ाइल में संपादन योग्य परत में बदल जाता है, जिससे आपको अपने डिज़ाइन पर पूर्ण नियंत्रण मिलता है।"
+      },
+      {
+        title: "तेज़ और विश्वसनीय",
+        description: "गुणवत्ता या फ़ाइलों की अखंडता से समझौता किए बिना तेज़ रूपांतरण समय का अनुभव करें।"
+      }
     ],
-  },
-  btnText: {
-    "merge-pdf": [
-      "मर्ज़ की गई PDF फ़ाइलें डाउनलोड करें",
-      "मर्ज़ की गई PDF फ़ाइल डाउनलोड करें",
-    ],
-  },
-  backto: {
-    "merge-pdf": "मर्ज़ की गई PDF को वापस जाएं",
-  },
+    keywords: "PDF से PSD, PDF को PSD में बदलें, मुफ्त PDF से PSD कनवर्टर, ऑनलाइन PDF से PSD रूपांतरण, PDF से फ़ोटोशॉप, PDF से परतें निकालें, PDF से संपादन योग्य PSD, परतों के साथ PDF से PSD"
+  }
 };
-
 export const edit_page: _edit_page = {
   edit_page_titles: {
-    merge_pdf: "PDF फ्यूज़न विकल्प",
+    pdf_to_psd: "PDF से PSD विकल्प",
+    psd_to_pdf: "PSD से PDF विकल्प",
   },
   loader_text: "कृपया प्रतीक्षा करें...",
   add_more_button: "अधिक फ़ाइलें जोड़ें",
   action_buttons: {
-    merge_pdf: "पीडीएफ विलय करें",
+    pdf_to_psd: "PSD में बदलें",
+    psd_to_pdf: "PDF में बदलें",
   },
-  pages: "पृष्ठों",
+  pages: "पृष्ठ",
   page: "पृष्ठ",
 };
+
+export const downloadFile: _downloadFile = {
+  titles: {
+    "pdf-to-psd": ["PDF फ़ाइल को PSD में बदल दिया गया है!", "PDF फ़ाइलों को PSD में बदल दिया गया है!"],
+    "psd-to-pdf": ["PSD फ़ाइल को PDF में बदल दिया गया है!", "PSD फ़ाइलों को PDF में बदल दिया गया है!"],
+  },
+
+  btnText: {
+    "pdf-to-psd": ["बदली गई PSD फ़ाइल डाउनलोड करें", "बदली गई PSD फ़ाइलें डाउनलोड करें"],
+    "psd-to-pdf": ["बदली गई PDF फ़ाइल डाउनलोड करें", "बदली गई PDF फ़ाइलें डाउनलोड करें"],
+  },
+
+  backto: {
+    "pdf-to-psd": "PDF से PSD पर वापस जाएं",
+    "psd-to-pdf": "PSD से PDF पर वापस जाएं",
+  },
+};
+
 
 export const tools: _tools = {
   select: "चुनें",

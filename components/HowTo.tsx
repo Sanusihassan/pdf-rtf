@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { ToolState } from "../src/store";
 import type { howToType } from "@/src/how-to/how-to-en";

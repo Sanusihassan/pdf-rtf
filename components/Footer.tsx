@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { footer } from "../content";
 import {
   FaFacebook,

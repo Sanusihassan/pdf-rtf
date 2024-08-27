@@ -90,11 +90,7 @@ const Tool: React.FC<ToolProps> = ({
   // accepted file types
   const acceptedFileTypes = {
     ".pdf": ".pdf, .PDF",
-    ".pptx": ".pptx, .ppt",
-    ".docx": ".docx, .doc",
-    ".xlsx": ".xlsx, .xls",
-    ".jpg": ".jpg, .jpeg",
-    ".html": ".html, .htm",
+    ".psd": ".psd, .PSD"
   };
 
   return (

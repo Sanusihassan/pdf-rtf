@@ -10,35 +10,82 @@ import type {
 } from "../../content";
 
 export const tool: _tool = {
-  Merge_PDF: {
-    title: "合并PDF",
-    description: "将多个PDF文件合并成一个文档",
-    color: "var(--red)",
-    type: ".pdf",
-    to: "/merge-pdf",
+  PSD_to_PDF: {
+    title: "将PSD转换为PDF",
+    seoTitle: "PSD转PDF转换器 - 免费在线工具",
+    description: "轻松将您的Photoshop文件（PSD）转换为高质量的PDF。",
+    color: "#001833",
+    type: ".psd",
+    to: "/psd-to-pdf",
+    features: [
+      {
+        title: "无缝的PSD到PDF转换",
+        description: "将您的PSD文件转换为PDF，同时保留图像和图层的质量，确保专业的输出效果。"
+      },
+      {
+        title: "批量转换",
+        description: "一次性将多个PSD文件转换为PDF，节省时间和精力。"
+      },
+      {
+        title: "安全且私密",
+        description: "您的文件将被安全处理，无需注册，确保您的隐私得到保护。"
+      }
+    ],
+    keywords: "PSD转PDF, 将PSD转换为PDF, 免费PSD转PDF转换器, 在线PSD到PDF转换, Photoshop转PDF, 批量PSD转PDF, 高质量PSD到PDF"
   },
+  PDF_to_PSD: {
+    title: "将PDF转换为PSD",
+    seoTitle: "免费在线PDF转PSD - 简单快速的转换",
+    description: "轻松将您的PDF文件转换为可编辑的Photoshop（PSD）文件。",
+    color: "#001833",
+    type: ".pdf",
+    to: "/pdf-to-psd",
+    features: [
+      {
+        title: "高质量的PDF到PSD转换",
+        description: "将您的PDF文档转换为分层的PSD文件，保留所有视觉元素，方便在Photoshop中进行编辑。"
+      },
+      {
+        title: "可编辑图层",
+        description: "您的PDF文件中的每个元素都将转换为PSD文件中的可编辑图层，让您完全控制您的设计。"
+      },
+      {
+        title: "快速且可靠",
+        description: "体验快速的转换时间，同时确保文件的质量和完整性不受影响。"
+      }
+    ],
+    keywords: "PDF转PSD, 将PDF转换为PSD, 免费PDF转PSD转换器, 在线PDF到PSD转换, PDF到Photoshop, 从PDF提取图层, 可编辑的PSD从PDF, 分层PDF到PSD"
+  }
 };
 
 export const downloadFile: _downloadFile = {
   titles: {
-    "merge-pdf": ["PDF文件已合并！", "PDF文件已合并！"],
+    "pdf-to-psd": ["PDF 文件已转换为 PSD！", "PDF 文件已转换为 PSD！"],
+    "psd-to-pdf": ["PSD 文件已转换为 PDF！", "PSD 文件已转换为 PDF！"],
   },
+
   btnText: {
-    "merge-pdf": ["下载合并后的PDF文件", "下载合并后的PDF文件"],
+    "pdf-to-psd": ["下载转换后的 PSD 文件", "下载转换后的 PSD 文件"],
+    "psd-to-pdf": ["下载转换后的 PDF 文件", "下载转换后的 PDF 文件"],
   },
+
   backto: {
-    "merge-pdf": "返回合并PDF",
+    "pdf-to-psd": "返回 PDF 转 PSD",
+    "psd-to-pdf": "返回 PSD 转 PDF",
   },
 };
 
+
 export const edit_page: _edit_page = {
   edit_page_titles: {
-    merge_pdf: "合并PDF选项",
+    pdf_to_psd: "PDF 转 PSD 选项",
+    psd_to_pdf: "PSD 转 PDF 选项",
   },
   loader_text: "请稍等...",
   add_more_button: "添加更多文件",
   action_buttons: {
-    merge_pdf: "合并PDF",
+    pdf_to_psd: "转换为 PSD",
+    psd_to_pdf: "转换为 PDF",
   },
   pages: "页",
   page: "页",

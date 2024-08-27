@@ -1,59 +1,59 @@
 import { _howToSchemas } from "./how-to-en";
 
 export const howToSchemas: _howToSchemas = {
-  PDFToEPUBHowTo: {
+  PDFToPSDHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "如何将PDF转换为EPUB",
-    description: "将PDF文件转换为EPUB格式的分步指南。",
+    name: "如何将 PDF 转换为 PSD",
+    description: "将 PDF 文件转换为 PSD 格式的逐步指南。",
     step: [
       {
         "@type": "HowToStep",
         name: "步骤 1",
-        text: "打开PDFEquips上的PDF转EPUB工具。",
+        text: "打开 PDFEquips 上的 PDF 转 PSD 工具。",
       },
       {
         "@type": "HowToStep",
         name: "步骤 2",
-        text: "拖放您的PDF文件，或点击“选择PDF文件”按钮从设备中选择PDF文件。",
+        text: "拖放您的 PDF 文件或点击“选择 PDF 文件”按钮，从您的设备中选择一个 PDF 文件。",
       },
       {
         "@type": "HowToStep",
         name: "步骤 3",
-        text: "上传文件后，点击“将PDF转换为EPUB”按钮。",
+        text: "文件上传完成后，点击“将 PDF 转换为 PSD”按钮。",
       },
       {
         "@type": "HowToStep",
         name: "步骤 4",
-        text: "等待转换完成，然后下载EPUB文件。",
+        text: "等待转换完成，然后下载 PSD 文件。",
       },
     ],
   },
-  EPUBToPDFHowTo: {
+  PSDToPDFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "如何将EPUB转换为PDF",
-    description: "将EPUB文件转换为PDF格式的分步指南。",
+    name: "如何将 PSD 转换为 PDF",
+    description: "将 PSD 文件转换为 PDF 格式的逐步指南。",
     step: [
       {
         "@type": "HowToStep",
         name: "步骤 1",
-        text: "打开PDFEquips上的EPUB转PDF工具。",
+        text: "打开 PDFEquips 上的 PSD 转 PDF 工具。",
       },
       {
         "@type": "HowToStep",
         name: "步骤 2",
-        text: "拖放您的EPUB文件，或点击“选择EPUB文件”按钮从设备中选择EPUB文件。",
+        text: "拖放您的 PSD 文件或点击“选择 PSD 文件”按钮，从您的设备中选择一个 PSD 文件。",
       },
       {
         "@type": "HowToStep",
         name: "步骤 3",
-        text: "上传文件后，点击“将EPUB转换为PDF”按钮。",
+        text: "文件上传完成后，点击“将 PSD 转换为 PDF”按钮。",
       },
       {
         "@type": "HowToStep",
         name: "步骤 4",
-        text: "等待转换完成，然后下载PDF文件。",
+        text: "等待转换完成，然后下载 PDF 文件。",
       },
     ],
   },

@@ -12,17 +12,18 @@ export type howToType = {
 };
 
 export type _howToSchemas = typeof howToSchemas;
+
 export const howToSchemas = {
-  PDFToEPUBHowTo: {
+  PDFToPSDHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "How to Convert PDF to EPUB",
-    description: "Step-by-step guide to convert a PDF file to an EPUB format.",
+    name: "How to Convert PDF to PSD",
+    description: "Step-by-step guide to convert a PDF file to a PSD format.",
     step: [
       {
         "@type": "HowToStep",
         name: "Step 1",
-        text: "Open the PDF to EPUB tool on PDFEquips.",
+        text: "Open the PDF to PSD tool on PDFEquips.",
       },
       {
         "@type": "HowToStep",
@@ -32,35 +33,35 @@ export const howToSchemas = {
       {
         "@type": "HowToStep",
         name: "Step 3",
-        text: "After the file is uploaded, click the 'Convert PDF to EPUB' button.",
+        text: "After the file is uploaded, click the 'Convert PDF to PSD' button.",
       },
       {
         "@type": "HowToStep",
         name: "Step 4",
-        text: "Wait for the conversion to complete, then download the EPUB file.",
+        text: "Wait for the conversion to complete, then download the PSD file.",
       },
     ],
   },
-  EPUBToPDFHowTo: {
+  PSDToPDFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "How to Convert EPUB to PDF",
-    description: "Step-by-step guide to convert an EPUB file to a PDF format.",
+    name: "How to Convert PSD to PDF",
+    description: "Step-by-step guide to convert a PSD file to a PDF format.",
     step: [
       {
         "@type": "HowToStep",
         name: "Step 1",
-        text: "Open the EPUB to PDF tool on PDFEquips.",
+        text: "Open the PSD to PDF tool on PDFEquips.",
       },
       {
         "@type": "HowToStep",
         name: "Step 2",
-        text: "Drag and drop your EPUB file or click the 'Select EPUB files' button to choose an EPUB file from your device.",
+        text: "Drag and drop your PSD file or click the 'Select PSD files' button to choose a PSD file from your device.",
       },
       {
         "@type": "HowToStep",
         name: "Step 3",
-        text: "After the file is uploaded, click the 'Convert EPUB to PDF' button.",
+        text: "After the file is uploaded, click the 'Convert PSD to PDF' button.",
       },
       {
         "@type": "HowToStep",
