@@ -1,49 +1,49 @@
 export const tool = {
-  PSD_to_PDF: {
-    title: "Convert PSD to PDF",
-    seoTitle: "PSD to PDF Converter - Free Online Tool",
-    description: "Easily convert your Photoshop files (PSD) to high-quality PDFs.",
-    color: "#001833",
-    type: ".psd",
-    to: "/psd-to-pdf",
-    features: [
-      {
-        title: "Seamless PSD to PDF Conversion",
-        description: "Convert your PSD files to PDF while preserving the quality of your images and layers, ensuring a professional output."
-      },
-      {
-        title: "Batch Conversion",
-        description: "Convert multiple PSD files to PDF in one go, saving time and effort."
-      },
-      {
-        title: "Secure and Private",
-        description: "Your files are processed securely with no need for registration, ensuring your privacy is protected."
-      }
-    ],
-    keywords: "PSD to PDF, convert PSD to PDF, free PSD to PDF converter, online PSD to PDF conversion, Photoshop to PDF, batch PSD to PDF, high-quality PSD to PDF"
-  },
-  PDF_to_PSD: {
-    title: "Convert PDF to PSD",
-    seoTitle: "Convert PDF to PSD Free Online - Easy & Fast Transformation",
-    description: "Transform your PDF files into editable Photoshop (PSD) files with ease.",
-    color: "#001833",
+  PDF_to_RTF: {
+    title: "Convert PDF to RTF",
+    seoTitle: "PDF to RTF Converter - Free Online Tool",
+    description: "Easily convert your PDF files to Rich Text Format (RTF) for better editing options.",
+    color: "#1B9CFC",
     type: ".pdf",
-    to: "/pdf-to-psd",
+    to: "/pdf-to-rtf",
     features: [
       {
-        title: "High-Quality PDF to PSD Conversion",
-        description: "Convert your PDF documents into layered PSD files, retaining all visual elements for easy editing in Photoshop."
+        title: "High-Quality PDF to RTF Conversion",
+        description: "Convert PDF documents into fully editable RTF files while retaining original formatting and text structure."
       },
       {
-        title: "Editable Layers",
-        description: "Each element of your PDF is converted into an editable layer in the resulting PSD file, giving you full control over your design."
+        title: "Preserve Formatting",
+        description: "Maintain the original fonts, styles, and layouts of your PDF when converting to RTF for a smooth editing experience."
       },
       {
-        title: "Fast and Reliable",
-        description: "Experience quick conversion times without compromising the quality or integrity of your files."
+        title: "Cross-Platform Compatibility",
+        description: "RTF files are compatible with a wide range of word processors, making them easy to use across various platforms."
       }
     ],
-    keywords: "PDF to PSD, convert PDF to PSD, free PDF to PSD converter, online PDF to PSD conversion, PDF to Photoshop, extract layers from PDF, editable PSD from PDF, PDF to layered PSD"
+    keywords: "PDF to RTF, convert PDF to RTF, free PDF to RTF converter, online PDF to RTF conversion, editable PDF to RTF, rich text format, PDF document to RTF"
+  },
+  RTF_to_PDF: {
+    title: "Convert RTF to PDF",
+    seoTitle: "RTF to PDF Converter - Free Online Tool",
+    description: "Easily convert your Rich Text Format (RTF) files into high-quality PDF documents.",
+    color: "#1B9CFC",
+    type: ".rtf",
+    to: "/rtf-to-pdf",
+    features: [
+      {
+        title: "Effortless RTF to PDF Conversion",
+        description: "Quickly convert your RTF files into professional PDF documents while preserving the original formatting."
+      },
+      {
+        title: "Preserve Formatting and Layout",
+        description: "Keep all the fonts, styles, and layouts from your RTF file intact during the conversion process."
+      },
+      {
+        title: "Universal Compatibility",
+        description: "PDF files can be opened on any device, ensuring your documents are easily accessible."
+      }
+    ],
+    keywords: "RTF to PDF, convert RTF to PDF, free RTF to PDF converter, online RTF to PDF conversion, rich text to PDF, batch RTF to PDF"
   }
 };
 
@@ -57,14 +57,14 @@ export const tools = {
 
 export const edit_page = {
   edit_page_titles: {
-    pdf_to_psd: "PDF to PSD options",
-    psd_to_pdf: "PSD to PDF options",
+    pdf_to_rtf: "PDF to RTF options",
+    rtf_to_pdf: "RTF to PDF options",
   },
   loader_text: "please wait...",
   add_more_button: "Add more files",
   action_buttons: {
-    pdf_to_psd: "Convert to PSD",
-    psd_to_pdf: "Convert to PDF",
+    pdf_to_rtf: "Convert to RTF",
+    rtf_to_pdf: "Convert to PDF",
   },
   pages: "pages",
   page: "page",
@@ -72,20 +72,21 @@ export const edit_page = {
 
 export const downloadFile = {
   titles: {
-    "pdf-to-psd": ["PDF file has been converted to PSD!", "PDF files have been converted to PSD!"],
-    "psd-to-pdf": ["PSD file has been converted to PDF!", "PSD files have been converted to PDF!"],
+    "pdf-to-rtf": ["PDF file has been converted to RTF!", "PDF files have been converted to RTF!"],
+    "rtf-to-pdf": ["RTF file has been converted to PDF!", "RTF files have been converted to PDF!"],
   },
 
   btnText: {
-    "pdf-to-psd": ["Download Converted PSD file", "Download Converted PSD files"],
-    "psd-to-pdf": ["Download Converted PDF file", "Download Converted PDF files"],
+    "pdf-to-rtf": ["Download Converted RTF file", "Download Converted RTF files"],
+    "rtf-to-pdf": ["Download Converted PDF file", "Download Converted PDF files"],
   },
 
   backto: {
-    "pdf-to-psd": "Back To PDF to PSD",
-    "psd-to-pdf": "Back To PSD to PDF",
+    "pdf-to-rtf": "Back To PDF to RTF",
+    "rtf-to-pdf": "Back To RTF to PDF",
   },
 };
+
 
 
 export const footer = {

@@ -1,16 +1,16 @@
 import { _howToSchemas } from "./how-to-en";
 
 export const howToSchemas: _howToSchemas = {
-  PDFToPSDHowTo: {
+  PDFToRTFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "كيفية تحويل PDF إلى PSD",
-    description: "دليل خطوة بخطوة لتحويل ملف PDF إلى تنسيق PSD.",
+    name: "كيفية تحويل PDF إلى RTF",
+    description: "دليل خطوة بخطوة لتحويل ملف PDF إلى تنسيق RTF.",
     step: [
       {
         "@type": "HowToStep",
         name: "الخطوة 1",
-        text: "افتح أداة تحويل PDF إلى PSD على PDFEquips.",
+        text: "افتح أداة تحويل PDF إلى RTF على PDFEquips.",
       },
       {
         "@type": "HowToStep",
@@ -20,40 +20,40 @@ export const howToSchemas: _howToSchemas = {
       {
         "@type": "HowToStep",
         name: "الخطوة 3",
-        text: "بعد تحميل الملف، انقر على زر 'تحويل PDF إلى PSD'.",
+        text: "بعد تحميل الملف، انقر على زر 'تحويل PDF إلى RTF'.",
       },
       {
         "@type": "HowToStep",
         name: "الخطوة 4",
-        text: "انتظر حتى تكتمل عملية التحويل، ثم قم بتنزيل ملف PSD.",
+        text: "انتظر حتى يكتمل التحويل، ثم قم بتنزيل ملف RTF.",
       },
     ],
   },
-  PSDToPDFHowTo: {
+  RTFToPDFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "كيفية تحويل PSD إلى PDF",
-    description: "دليل خطوة بخطوة لتحويل ملف PSD إلى تنسيق PDF.",
+    name: "كيفية تحويل RTF إلى PDF",
+    description: "دليل خطوة بخطوة لتحويل ملف RTF إلى تنسيق PDF.",
     step: [
       {
         "@type": "HowToStep",
         name: "الخطوة 1",
-        text: "افتح أداة تحويل PSD إلى PDF على PDFEquips.",
+        text: "افتح أداة تحويل RTF إلى PDF على PDFEquips.",
       },
       {
         "@type": "HowToStep",
         name: "الخطوة 2",
-        text: "اسحب وأفلت ملف PSD الخاص بك أو انقر على زر 'اختيار ملفات PSD' لاختيار ملف PSD من جهازك.",
+        text: "اسحب وأفلت ملف RTF الخاص بك أو انقر على زر 'اختيار ملفات RTF' لاختيار ملف RTF من جهازك.",
       },
       {
         "@type": "HowToStep",
         name: "الخطوة 3",
-        text: "بعد تحميل الملف، انقر على زر 'تحويل PSD إلى PDF'.",
+        text: "بعد تحميل الملف، انقر على زر 'تحويل RTF إلى PDF'.",
       },
       {
         "@type": "HowToStep",
         name: "الخطوة 4",
-        text: "انتظر حتى تكتمل عملية التحويل، ثم قم بتنزيل ملف PDF.",
+        text: "انتظر حتى يكتمل التحويل، ثم قم بتنزيل ملف PDF.",
       },
     ],
   },

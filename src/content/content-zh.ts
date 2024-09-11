@@ -10,86 +10,86 @@ import type {
 } from "../../content";
 
 export const tool: _tool = {
-  PSD_to_PDF: {
-    title: "将PSD转换为PDF",
-    seoTitle: "PSD转PDF转换器 - 免费在线工具",
-    description: "轻松将您的Photoshop文件（PSD）转换为高质量的PDF。",
-    color: "#001833",
-    type: ".psd",
-    to: "/psd-to-pdf",
-    features: [
-      {
-        title: "无缝的PSD到PDF转换",
-        description: "将您的PSD文件转换为PDF，同时保留图像和图层的质量，确保专业的输出效果。"
-      },
-      {
-        title: "批量转换",
-        description: "一次性将多个PSD文件转换为PDF，节省时间和精力。"
-      },
-      {
-        title: "安全且私密",
-        description: "您的文件将被安全处理，无需注册，确保您的隐私得到保护。"
-      }
-    ],
-    keywords: "PSD转PDF, 将PSD转换为PDF, 免费PSD转PDF转换器, 在线PSD到PDF转换, Photoshop转PDF, 批量PSD转PDF, 高质量PSD到PDF"
-  },
-  PDF_to_PSD: {
-    title: "将PDF转换为PSD",
-    seoTitle: "免费在线PDF转PSD - 简单快速的转换",
-    description: "轻松将您的PDF文件转换为可编辑的Photoshop（PSD）文件。",
-    color: "#001833",
+  PDF_to_RTF: {
+    title: "将 PDF 转换为 RTF",
+    seoTitle: "PDF 转 RTF 转换器 - 免费在线工具",
+    description: "轻松将您的 PDF 文件转换为富文本格式 (RTF)，以获得更好的编辑选项。",
+    color: "#1B9CFC",
     type: ".pdf",
-    to: "/pdf-to-psd",
+    to: "/pdf-to-rtf",
     features: [
       {
-        title: "高质量的PDF到PSD转换",
-        description: "将您的PDF文档转换为分层的PSD文件，保留所有视觉元素，方便在Photoshop中进行编辑。"
+        title: "高质量的 PDF 到 RTF 转换",
+        description: "将 PDF 文档转换为完全可编辑的 RTF 文件，同时保留原始格式和文本结构。"
       },
       {
-        title: "可编辑图层",
-        description: "您的PDF文件中的每个元素都将转换为PSD文件中的可编辑图层，让您完全控制您的设计。"
+        title: "保留格式",
+        description: "在转换为 RTF 时，保留您的 PDF 文件的原始字体、样式和布局，以便获得流畅的编辑体验。"
       },
       {
-        title: "快速且可靠",
-        description: "体验快速的转换时间，同时确保文件的质量和完整性不受影响。"
+        title: "跨平台兼容性",
+        description: "RTF 文件与多种文字处理器兼容，使其在各种平台上都易于使用。"
       }
     ],
-    keywords: "PDF转PSD, 将PDF转换为PSD, 免费PDF转PSD转换器, 在线PDF到PSD转换, PDF到Photoshop, 从PDF提取图层, 可编辑的PSD从PDF, 分层PDF到PSD"
+    keywords: "PDF 转 RTF, 将 PDF 转换为 RTF, 免费的 PDF 到 RTF 转换器, 在线 PDF 到 RTF 转换, 可编辑的 PDF 转 RTF, 富文本格式, PDF 文档到 RTF"
+  },
+  RTF_to_PDF: {
+    title: "将 RTF 转换为 PDF",
+    seoTitle: "RTF 转 PDF 转换器 - 免费在线工具",
+    description: "轻松将您的富文本格式 (RTF) 文件转换为高质量的 PDF 文档。",
+    color: "#1B9CFC",
+    type: ".rtf",
+    to: "/rtf-to-pdf",
+    features: [
+      {
+        title: "轻松的 RTF 到 PDF 转换",
+        description: "快速将您的 RTF 文件转换为专业的 PDF 文档，同时保留原始格式。"
+      },
+      {
+        title: "保留格式和布局",
+        description: "在转换过程中，保留 RTF 文件的所有字体、样式和布局。"
+      },
+      {
+        title: "通用兼容性",
+        description: "PDF 文件可以在任何设备上打开，确保您的文档易于访问。"
+      }
+    ],
+    keywords: "RTF 转 PDF, 将 RTF 转换为 PDF, 免费的 RTF 到 PDF 转换器, 在线 RTF 到 PDF 转换, 富文本到 PDF, 批量 RTF 到 PDF 转换"
   }
 };
 
-export const downloadFile: _downloadFile = {
-  titles: {
-    "pdf-to-psd": ["PDF 文件已转换为 PSD！", "PDF 文件已转换为 PSD！"],
-    "psd-to-pdf": ["PSD 文件已转换为 PDF！", "PSD 文件已转换为 PDF！"],
-  },
-
-  btnText: {
-    "pdf-to-psd": ["下载转换后的 PSD 文件", "下载转换后的 PSD 文件"],
-    "psd-to-pdf": ["下载转换后的 PDF 文件", "下载转换后的 PDF 文件"],
-  },
-
-  backto: {
-    "pdf-to-psd": "返回 PDF 转 PSD",
-    "psd-to-pdf": "返回 PSD 转 PDF",
-  },
-};
-
-
 export const edit_page: _edit_page = {
   edit_page_titles: {
-    pdf_to_psd: "PDF 转 PSD 选项",
-    psd_to_pdf: "PSD 转 PDF 选项",
+    pdf_to_rtf: "PDF 转 RTF 选项",
+    rtf_to_pdf: "RTF 转 PDF 选项",
   },
-  loader_text: "请稍等...",
+  loader_text: "请稍候...",
   add_more_button: "添加更多文件",
   action_buttons: {
-    pdf_to_psd: "转换为 PSD",
-    psd_to_pdf: "转换为 PDF",
+    pdf_to_rtf: "转换为 RTF",
+    rtf_to_pdf: "转换为 PDF",
   },
   pages: "页",
   page: "页",
 };
+
+export const downloadFile: _downloadFile = {
+  titles: {
+    "pdf-to-rtf": ["PDF 文件已转换为 RTF！", "PDF 文件已转换为 RTF！"],
+    "rtf-to-pdf": ["RTF 文件已转换为 PDF！", "RTF 文件已转换为 PDF！"],
+  },
+
+  btnText: {
+    "pdf-to-rtf": ["下载已转换的 RTF 文件", "下载已转换的 RTF 文件"],
+    "rtf-to-pdf": ["下载已转换的 PDF 文件", "下载已转换的 PDF 文件"],
+  },
+
+  backto: {
+    "pdf-to-rtf": "返回 PDF 转 RTF",
+    "rtf-to-pdf": "返回 RTF 转 PDF",
+  },
+};
+
 
 export const tools: _tools = {
   select: "选择",

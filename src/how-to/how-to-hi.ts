@@ -1,59 +1,59 @@
 import { _howToSchemas } from "./how-to-en";
 
 export const howToSchemas: _howToSchemas = {
-  PDFToPSDHowTo: {
+  PDFToRTFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "PDF को PSD में कैसे बदलें",
-    description: "एक PDF फ़ाइल को PSD प्रारूप में बदलने के लिए चरण-दर-चरण मार्गदर्शिका।",
+    name: "PDF को RTF में कैसे बदलें",
+    description: "PDF फ़ाइल को RTF प्रारूप में बदलने के लिए चरण-दर-चरण मार्गदर्शिका।",
     step: [
       {
         "@type": "HowToStep",
         name: "चरण 1",
-        text: "PDFEquips पर PDF से PSD टूल खोलें।",
+        text: "PDFEquips पर PDF को RTF में बदलने वाले टूल को खोलें।",
       },
       {
         "@type": "HowToStep",
         name: "चरण 2",
-        text: "अपने PDF फ़ाइल को खींचें और छोड़ें या 'PDF फ़ाइलें चुनें' बटन पर क्लिक करें और अपने डिवाइस से PDF फ़ाइल चुनें।",
+        text: "अपनी PDF फ़ाइल को खींचकर छोड़ें या अपने डिवाइस से PDF फ़ाइल चुनने के लिए 'PDF फ़ाइलें चुनें' बटन पर क्लिक करें।",
       },
       {
         "@type": "HowToStep",
         name: "चरण 3",
-        text: "फ़ाइल अपलोड होने के बाद, 'PDF को PSD में बदलें' बटन पर क्लिक करें।",
+        text: "फ़ाइल अपलोड होने के बाद, 'PDF को RTF में बदलें' बटन पर क्लिक करें।",
       },
       {
         "@type": "HowToStep",
         name: "चरण 4",
-        text: "परिवर्तन पूरा होने का इंतजार करें, फिर PSD फ़ाइल डाउनलोड करें।",
+        text: "रूपांतरण पूर्ण होने की प्रतीक्षा करें, फिर RTF फ़ाइल डाउनलोड करें।",
       },
     ],
   },
-  PSDToPDFHowTo: {
+  RTFToPDFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "PSD को PDF में कैसे बदलें",
-    description: "एक PSD फ़ाइल को PDF प्रारूप में बदलने के लिए चरण-दर-चरण मार्गदर्शिका।",
+    name: "RTF को PDF में कैसे बदलें",
+    description: "RTF फ़ाइल को PDF प्रारूप में बदलने के लिए चरण-दर-चरण मार्गदर्शिका।",
     step: [
       {
         "@type": "HowToStep",
         name: "चरण 1",
-        text: "PDFEquips पर PSD से PDF टूल खोलें।",
+        text: "PDFEquips पर RTF को PDF में बदलने वाले टूल को खोलें।",
       },
       {
         "@type": "HowToStep",
         name: "चरण 2",
-        text: "अपने PSD फ़ाइल को खींचें और छोड़ें या 'PSD फ़ाइलें चुनें' बटन पर क्लिक करें और अपने डिवाइस से PSD फ़ाइल चुनें।",
+        text: "अपनी RTF फ़ाइल को खींचकर छोड़ें या अपने डिवाइस से RTF फ़ाइल चुनने के लिए 'RTF फ़ाइलें चुनें' बटन पर क्लिक करें।",
       },
       {
         "@type": "HowToStep",
         name: "चरण 3",
-        text: "फ़ाइल अपलोड होने के बाद, 'PSD को PDF में बदलें' बटन पर क्लिक करें।",
+        text: "फ़ाइल अपलोड होने के बाद, 'RTF को PDF में बदलें' बटन पर क्लिक करें।",
       },
       {
         "@type": "HowToStep",
         name: "चरण 4",
-        text: "परिवर्तन पूरा होने का इंतजार करें, फिर PDF फ़ाइल डाउनलोड करें।",
+        text: "रूपांतरण पूर्ण होने की प्रतीक्षा करें, फिर PDF फ़ाइल डाउनलोड करें।",
       },
     ],
   },

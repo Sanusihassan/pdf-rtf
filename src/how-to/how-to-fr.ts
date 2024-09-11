@@ -1,59 +1,59 @@
 import { _howToSchemas } from "./how-to-en";
 
 export const howToSchemas: _howToSchemas = {
-  PDFToPSDHowTo: {
+  PDFToRTFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "Comment Convertir PDF en PSD",
-    description: "Guide étape par étape pour convertir un fichier PDF au format PSD.",
+    name: "Comment Convertir un PDF en RTF",
+    description: "Guide étape par étape pour convertir un fichier PDF au format RTF.",
     step: [
       {
         "@type": "HowToStep",
         name: "Étape 1",
-        text: "Ouvrez l'outil PDF en PSD sur PDFEquips.",
+        text: "Ouvrez l'outil PDF en RTF sur PDFEquips.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 2",
-        text: "Faites glisser et déposer votre fichier PDF ou cliquez sur le bouton 'Sélectionner des fichiers PDF' pour choisir un fichier PDF depuis votre appareil.",
+        text: "Glissez et déposez votre fichier PDF ou cliquez sur le bouton 'Sélectionner des fichiers PDF' pour choisir un fichier PDF depuis votre appareil.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 3",
-        text: "Une fois le fichier téléchargé, cliquez sur le bouton 'Convertir PDF en PSD'.",
+        text: "Une fois le fichier téléchargé, cliquez sur le bouton 'Convertir PDF en RTF'.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 4",
-        text: "Attendez que la conversion soit terminée, puis téléchargez le fichier PSD.",
+        text: "Attendez la fin de la conversion, puis téléchargez le fichier RTF.",
       },
     ],
   },
-  PSDToPDFHowTo: {
+  RTFToPDFHowTo: {
     "@context": "http://schema.org",
     "@type": "HowTo",
-    name: "Comment Convertir PSD en PDF",
-    description: "Guide étape par étape pour convertir un fichier PSD au format PDF.",
+    name: "Comment Convertir un RTF en PDF",
+    description: "Guide étape par étape pour convertir un fichier RTF au format PDF.",
     step: [
       {
         "@type": "HowToStep",
         name: "Étape 1",
-        text: "Ouvrez l'outil PSD en PDF sur PDFEquips.",
+        text: "Ouvrez l'outil RTF en PDF sur PDFEquips.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 2",
-        text: "Faites glisser et déposer votre fichier PSD ou cliquez sur le bouton 'Sélectionner des fichiers PSD' pour choisir un fichier PSD depuis votre appareil.",
+        text: "Glissez et déposez votre fichier RTF ou cliquez sur le bouton 'Sélectionner des fichiers RTF' pour choisir un fichier RTF depuis votre appareil.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 3",
-        text: "Une fois le fichier téléchargé, cliquez sur le bouton 'Convertir PSD en PDF'.",
+        text: "Une fois le fichier téléchargé, cliquez sur le bouton 'Convertir RTF en PDF'.",
       },
       {
         "@type": "HowToStep",
         name: "Étape 4",
-        text: "Attendez que la conversion soit terminée, puis téléchargez le fichier PDF.",
+        text: "Attendez la fin de la conversion, puis téléchargez le fichier PDF.",
       },
     ],
   },

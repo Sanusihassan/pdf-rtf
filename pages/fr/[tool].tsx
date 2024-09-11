@@ -13,7 +13,7 @@ import { errors } from "../../src/content/content-fr";
 import { useRouter } from "next/router";
 import type { data_type } from "../[tool]";
 import { OpenGraph } from "pdfequips-open-graph/OpenGraph";
-import { Features } from "@/components/Features";
+import Features from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import HowTo from "@/components/HowTo";
 import { howToType } from "@/src/how-to/how-to-en";
@@ -48,7 +48,7 @@ export default ({ item, lang }: { item: data_type; lang: string }) => {
     description: item.description,
     url: `https://www.pdfequips.com${asPath}`,
   };
-  const howToSchema = item.to === "pdf-to-psd" ? howToSchemas.PDFToPSDHowTo : howToSchemas.PSDToPDFHowTo;
+  const howToSchema = item.to === "/pdf-to-rtf" ? howToSchemas.PDFToRTFHowTo : howToSchemas.RTFToPDFHowTo;
   return (
     <>
       <Head>
@@ -100,6 +100,6 @@ export default ({ item, lang }: { item: data_type; lang: string }) => {
 };
 
 export const routes = {
-  "/pdf-to-psd": { item: tool["PDF_to_PSD"] },
-  "/psd-to-pdf": { item: tool["PSD_to_PDF"] },
+  "/pdf-to-rtf": { item: tool["PDF_to_RTF"] },
+  "/rtf-to-pdf": { item: tool["RTF_to_PDF"] },
 };

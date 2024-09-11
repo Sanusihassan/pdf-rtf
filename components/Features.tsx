@@ -1,32 +1,29 @@
 import { useSelector } from "react-redux";
-import { GoShieldLock } from "react-icons/go";
 import type { ToolState } from "@/src/store";
-import SmoothIcon from "./icons/SmoothIcon";
-import { RiCheckboxMultipleBlankLine } from "react-icons/ri";
 import { MdOutlineHighQuality } from "react-icons/md";
-import { PencilAltIcon } from "@heroicons/react/outline";
-import FastIcon from "./icons/FastIcon";
+import { BiLike } from "react-icons/bi";
+import { GrSystem } from "react-icons/gr";
+import SmoothIcon from "./icons/SmoothIcon";
+import { IoIosGlobe } from "react-icons/io";
 
-export const Features = ({
-  features,
-  tool
-}: {
+
+const Features = ({ features, tool }: {
   features: { title: string; description: string }[];
-  tool: "/psd-to-pdf" | "/pdf-to-psd"
+  tool: "/rtf-to-pdf" | "/pdf-to-rtf";
 }) => {
   const stateShowTool = useSelector(
     (state: { tool: ToolState }) => state.tool.showTool
   );
-  const icons1 = [SmoothIcon, RiCheckboxMultipleBlankLine, GoShieldLock];
-  const icons2 = [MdOutlineHighQuality, PencilAltIcon, FastIcon];
-  const icons = tool === "/psd-to-pdf" ? icons1 : icons2;
+  const iconsRTFPDF = [SmoothIcon, BiLike, IoIosGlobe];
+  const iconsPDFRTF = [MdOutlineHighQuality, BiLike, GrSystem]
+  const icons = tool === "/pdf-to-rtf" ? iconsPDFRTF : iconsRTFPDF;
   return (
     <div className={`features${stateShowTool ? "" : " d-none"}`}>
       {features.map(({ title, description }, i) => {
         const Icon = icons[i];
         return (
           <div className="feature">
-            <Icon className={`feature-icon no-fill`} />
+            {Icon ? <Icon className={`feature-icon no-fill`} /> : null}
             <div className="title">{title}</div>
             <p className="description">{description}</p>
           </div>
@@ -35,3 +32,6 @@ export const Features = ({
     </div>
   );
 };
+
+
+export default Features;

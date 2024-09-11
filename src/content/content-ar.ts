@@ -9,53 +9,54 @@ import type {
 } from "../../content";
 
 export const tool: _tool = {
-  PSD_to_PDF: {
-    title: "تحويل PSD إلى PDF",
-    seoTitle: "محول PSD إلى PDF - أداة مجانية عبر الإنترنت",
-    description: "حوّل ملفات الفوتوشوب (PSD) الخاصة بك إلى ملفات PDF عالية الجودة بسهولة.",
-    color: "#001833",
-    type: ".psd",
-    to: "/psd-to-pdf",
-    features: [
-      {
-        title: "تحويل سلس من PSD إلى PDF",
-        description: "حوّل ملفات PSD الخاصة بك إلى PDF مع الحفاظ على جودة الصور والطبقات، مما يضمن إخراجاً احترافياً."
-      },
-      {
-        title: "تحويل دفعات",
-        description: "حوّل عدة ملفات PSD إلى PDF دفعة واحدة، مما يوفر الوقت والجهد."
-      },
-      {
-        title: "آمن وخاص",
-        description: "تتم معالجة ملفاتك بأمان دون الحاجة إلى تسجيل، مما يضمن حماية خصوصيتك."
-      }
-    ],
-    keywords: "تحويل PSD إلى PDF, محول PSD إلى PDF, أداة مجانية لتحويل PSD إلى PDF, تحويل PSD إلى PDF عبر الإنترنت, فوتوشوب إلى PDF, تحويل دفعات PSD إلى PDF, PSD إلى PDF عالي الجودة"
-  },
-  PDF_to_PSD: {
-    title: "تحويل PDF إلى PSD",
-    seoTitle: "تحويل PDF إلى PSD مجاناً عبر الإنترنت - تحويل سهل وسريع",
-    description: "حوّل ملفات PDF الخاصة بك إلى ملفات فوتوشوب (PSD) قابلة للتعديل بسهولة.",
-    color: "#001833",
+  PDF_to_RTF: {
+    title: "تحويل PDF إلى RTF",
+    seoTitle: "محول PDF إلى RTF - أداة مجانية على الإنترنت",
+    description: "حوّل ملفات PDF الخاصة بك بسهولة إلى تنسيق النص الغني (RTF) للحصول على خيارات تحرير أفضل.",
+    color: "#1B9CFC",
     type: ".pdf",
-    to: "/pdf-to-psd",
+    to: "/pdf-to-rtf",
     features: [
       {
-        title: "تحويل عالي الجودة من PDF إلى PSD",
-        description: "حوّل مستندات PDF الخاصة بك إلى ملفات PSD بطبقات متعددة، مع الحفاظ على جميع العناصر المرئية للتعديل السهل في الفوتوشوب."
+        title: "تحويل PDF إلى RTF بجودة عالية",
+        description: "حوّل مستندات PDF إلى ملفات RTF قابلة للتحرير بالكامل مع الحفاظ على التنسيق الأصلي وهيكل النص."
       },
       {
-        title: "طبقات قابلة للتعديل",
-        description: "يتم تحويل كل عنصر من عناصر PDF إلى طبقة قابلة للتعديل في ملف PSD الناتج، مما يتيح لك التحكم الكامل في تصميمك."
+        title: "الحفاظ على التنسيق",
+        description: "حافظ على الخطوط والأنماط والتخطيطات الأصلية لملف PDF الخاص بك عند التحويل إلى RTF لتجربة تحرير سلسة."
       },
       {
-        title: "سريع وموثوق",
-        description: "اختبر سرعات تحويل سريعة دون المساس بجودة أو سلامة ملفاتك."
+        title: "التوافق عبر الأنظمة الأساسية",
+        description: "ملفات RTF متوافقة مع مجموعة واسعة من معالجات النصوص، مما يجعلها سهلة الاستخدام عبر منصات مختلفة."
       }
     ],
-    keywords: "تحويل PDF إلى PSD, محول PDF إلى PSD, أداة مجانية لتحويل PDF إلى PSD, تحويل PDF إلى PSD عبر الإنترنت, PDF إلى فوتوشوب, استخراج الطبقات من PDF, PSD قابل للتعديل من PDF, PDF إلى PSD بطبقات"
+    keywords: "PDF إلى RTF, تحويل PDF إلى RTF, محول PDF إلى RTF مجاني, تحويل PDF إلى RTF عبر الإنترنت, PDF قابل للتحرير إلى RTF, تنسيق النص الغني, مستند PDF إلى RTF"
+  },
+  RTF_to_PDF: {
+    title: "تحويل RTF إلى PDF",
+    seoTitle: "محول RTF إلى PDF - أداة مجانية على الإنترنت",
+    description: "حوّل ملفات تنسيق النص الغني (RTF) الخاصة بك بسهولة إلى مستندات PDF عالية الجودة.",
+    color: "#1B9CFC",
+    type: ".rtf",
+    to: "/rtf-to-pdf",
+    features: [
+      {
+        title: "تحويل RTF إلى PDF بسهولة",
+        description: "حوّل ملفات RTF الخاصة بك بسرعة إلى مستندات PDF احترافية مع الحفاظ على التنسيق الأصلي."
+      },
+      {
+        title: "الحفاظ على التنسيق والتخطيط",
+        description: "احتفظ بجميع الخطوط والأنماط والتخطيطات من ملف RTF الخاص بك كما هي أثناء عملية التحويل."
+      },
+      {
+        title: "التوافق العالمي",
+        description: "يمكن فتح ملفات PDF على أي جهاز، مما يضمن سهولة الوصول إلى مستنداتك."
+      }
+    ],
+    keywords: "RTF إلى PDF, تحويل RTF إلى PDF, محول RTF إلى PDF مجاني, تحويل RTF إلى PDF عبر الإنترنت, نص غني إلى PDF, تحويل دفعات RTF إلى PDF"
   }
 };
+
 
 
 export const tools: _tools = {
@@ -67,14 +68,14 @@ export const tools: _tools = {
 
 export const edit_page: _edit_page = {
   edit_page_titles: {
-    pdf_to_psd: "خيارات تحويل PDF إلى PSD",
-    psd_to_pdf: "خيارات تحويل PSD إلى PDF",
+    pdf_to_rtf: "خيارات تحويل PDF إلى RTF",
+    rtf_to_pdf: "خيارات تحويل RTF إلى PDF",
   },
   loader_text: "يرجى الانتظار...",
-  add_more_button: "أضف المزيد من الملفات",
+  add_more_button: "إضافة المزيد من الملفات",
   action_buttons: {
-    pdf_to_psd: "تحويل إلى PSD",
-    psd_to_pdf: "تحويل إلى PDF",
+    pdf_to_rtf: "تحويل إلى RTF",
+    rtf_to_pdf: "تحويل إلى PDF",
   },
   pages: "صفحات",
   page: "صفحة",
@@ -82,20 +83,21 @@ export const edit_page: _edit_page = {
 
 export const downloadFile: _downloadFile = {
   titles: {
-    "pdf-to-psd": ["تم تحويل ملف PDF إلى PSD!", "تم تحويل ملفات PDF إلى PSD!"],
-    "psd-to-pdf": ["تم تحويل ملف PSD إلى PDF!", "تم تحويل ملفات PSD إلى PDF!"],
+    "pdf-to-rtf": ["تم تحويل ملف PDF إلى RTF!", "تم تحويل ملفات PDF إلى RTF!"],
+    "rtf-to-pdf": ["تم تحويل ملف RTF إلى PDF!", "تم تحويل ملفات RTF إلى PDF!"],
   },
 
   btnText: {
-    "pdf-to-psd": ["تحميل ملف PSD المحول", "تحميل ملفات PSD المحولة"],
-    "psd-to-pdf": ["تحميل ملف PDF المحول", "تحميل ملفات PDF المحولة"],
+    "pdf-to-rtf": ["تحميل ملف RTF المحول", "تحميل الملفات المحولة إلى RTF"],
+    "rtf-to-pdf": ["تحميل ملف PDF المحول", "تحميل الملفات المحولة إلى PDF"],
   },
 
   backto: {
-    "pdf-to-psd": "العودة إلى تحويل PDF إلى PSD",
-    "psd-to-pdf": "العودة إلى تحويل PSD إلى PDF",
+    "pdf-to-rtf": "العودة إلى تحويل PDF إلى RTF",
+    "rtf-to-pdf": "العودة إلى تحويل RTF إلى PDF",
   },
 };
+
 
 
 export const footer: _footer = {

@@ -1,7 +1,6 @@
 import { useCallback, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
-
-import EditPage from "./EditPage";
+import { EditPage } from "./EditPage";
 import { ToolState, setField } from "../src/store";
 
 import { useRouter } from "next/router";

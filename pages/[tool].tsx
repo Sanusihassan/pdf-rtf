@@ -11,17 +11,24 @@ import {
 } from "../src/content/content";
 import { useRouter } from "next/router";
 import { OpenGraph } from "pdfequips-open-graph/OpenGraph";
-import { Features } from "@/components/Features";
+// import Features from "@/components/Features";
+
+const Features = dynamic(() => import('@/components/Features.tsx'), {
+  ssr: false
+});
+
 import { Footer } from "@/components/Footer";
 import HowTo from "@/components/HowTo";
 import { howToSchemas, howToType } from "@/src/how-to/how-to-en";
+import dynamic from "next/dynamic";
+// import Features from "@/components/Features";
 
 export type data_type = {
   title: string;
   description: string;
   color: string;
   type: string;
-  to: "/psd-to-pdf" | "/pdf-to-psd";
+  to: "/rtf-to-pdf" | "/pdf-to-rtf";
   seoTitle: string;
   features: { title: string; description: string }[]
 };
@@ -57,7 +64,7 @@ export default ({ item }: { item: data_type }) => {
     url: `https://www.pdfequips.com${asPath}`,
   };
 
-  const howToSchema = item.to === "/pdf-to-psd" ? howToSchemas.PDFToPSDHowTo : howToSchemas.PSDToPDFHowTo;
+  const howToSchema = item.to === "/pdf-to-rtf" ? howToSchemas.PDFToRTFHowTo : howToSchemas.RTFToPDFHowTo;
   return (
     <>
       <Head>
@@ -80,7 +87,6 @@ export default ({ item }: { item: data_type }) => {
           ogTitle={item.seoTitle}
           ogImage={`https://www.pdfequips.com/images${item.to}.png`}
         />
-        {/* needed for styles */}
       </Head>
       <NavBar path={item.to.replace("/", "")} lang="" />
       <Tool
@@ -111,6 +117,6 @@ export default ({ item }: { item: data_type }) => {
 
 // export default ToolPage;
 export const routes = {
-  "/pdf-to-psd": { item: tool["PDF_to_PSD"] },
-  "/psd-to-pdf": { item: tool["PSD_to_PDF"] },
+  "/pdf-to-rtf": { item: tool["PDF_to_RTF"] },
+  "/rtf-to-pdf": { item: tool["RTF_to_PDF"] },
 };

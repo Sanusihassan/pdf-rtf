@@ -1,14 +1,15 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const isProd = process.env.NODE_ENV === "production";
-const withTM = require("next-transpile-modules")(["pdfequips-navbar", "pdfequips-open-graph"]);
+// const withTM = require("next-transpile-modules")(["pdfequips-navbar", "pdfequips-open-graph"]);
 
-module.exports = withTM({
+module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "node_modules")],
   },
-  // assetPrefix: isProd ? "/tool-pdf" : "",
+  assetPrefix: isProd ? "/pdf-rtf" : "",
   output: "export",
+  transpilePackages: ["pdfequips-navbar", "pdfequips-open-graph"],
   webpack: (config, { isServer }) => {
     // Only run this configuration on the client side
     if (!isServer) {
@@ -48,4 +49,4 @@ module.exports = withTM({
 
     return config;
   },
-});
+};
