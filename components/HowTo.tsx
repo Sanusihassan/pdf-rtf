@@ -33,7 +33,7 @@ const HowTo = ({
               media="(min-width: 575px) and (max-width: 1200px)"
             />
             <source
-              srcSet={`/images/how-to-convert-${imgSrc}-ad-xl.png`}
+              srcSet={`/images/how-to-convert-${imgSrc}-xl.png`}
               media="(min-width: 1200px)"
             />
             <img
