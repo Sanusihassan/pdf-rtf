@@ -109,11 +109,6 @@ export const getFileDetailsTooltipContent = async (
   return tooltipContent;
 };
 
-/**
- * this is the current function and it's working,
- * but i want to display the pdf.png file while fetching the first page from the pdf
- */
-
 export async function getFirstPageAsImage(
   file: File,
   dispatch: Dispatch<AnyAction>,
@@ -157,14 +152,10 @@ export async function getFirstPageAsImage(
 
 export const getPlaceHoderImageUrl = (extension: string) => {
   switch (extension) {
-    case ".docx":
-      return "/images/word.png";
-    case ".html":
-      return "/images/html.png";
-    case ".pptx":
-      return "/images/powerpoint.png";
-    case ".xlsx":
-      return "/images/excel.png";
+    case ".rtf":
+      return "/images/rtf.png";
+    case ".rtfd":
+      return "/images/rtfd.png";
     default:
       return "images/pdf.png";
   }
@@ -192,7 +183,9 @@ export const validateFiles = (
 
   let allowedMimeTypes = [
     "application/pdf",
-    "image/vnd.adobe.photoshop"
+    "application/rtf",
+    "text/rtf",
+    "application/rtfd"
   ];
   // validation for merge-pdf page & empty files
   if (state.path == "merge-pdf" && files.length <= 1) {
@@ -213,7 +206,8 @@ export const validateFiles = (
     // this contains all types and some special types that might potentially be of than one extension
     const types = [
       "pdf",
-      "psd"
+      "rtf",
+      "rtfd"
     ];
 
     if (!file || !file.name) {

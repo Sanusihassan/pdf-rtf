@@ -34,7 +34,7 @@ const FileCard = ({
   fileDetailProps,
 }: CardProps) => {
   const [showLoader, setShowLoader] = useState(true);
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState("as");
   const [tooltipSize, setToolTipSize] = useState("");
   const dispatch = useDispatch();
   let isSubscribed = true;
@@ -69,7 +69,8 @@ const FileCard = ({
           if (isSubscribed) {
             setImageUrl(await getFirstPageAsImage(file, dispatch, errors));
           }
-        } else if (extension && extension !== ".jpg") {
+        }
+        else if (extension && (extension !== ".rtfd" && extension !== ".rtf")) {
           if (isSubscribed) {
             setImageUrl(
               !file.size
@@ -77,6 +78,8 @@ const FileCard = ({
                 : getPlaceHoderImageUrl(extension)
             );
           }
+        } else {
+          setImageUrl("/images/rtf.png")
         }
       } catch (error) {
         console.error("Error processing files:", error);

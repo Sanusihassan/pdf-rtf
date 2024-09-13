@@ -11,7 +11,7 @@ import type { tools } from "../../content";
 import { useRouter } from "next/router";
 import { validateFiles } from "../../src/utils";
 type AcceptedFileTypes = {
-  [key in ".pdf" | ".rtf"]: string;
+  [key in ".pdf" | ".rtf" | ".rtfd"]: string;
 };
 interface FileInputFormProps {
   data: {
