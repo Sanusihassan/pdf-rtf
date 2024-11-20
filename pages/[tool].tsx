@@ -17,7 +17,9 @@ const Features = dynamic(() => import('@/components/Features.tsx'), {
   ssr: false
 });
 
-import { Footer } from "@/components/Footer";
+import { Footer } from "pdfequips-footer/components/Footer";
+import { fetchSubscriptionStatus } from "fetch-subscription-status";
+import { useState, useCallback, useEffect } from "react";
 import HowTo from "@/components/HowTo";
 import { howToSchemas, howToType } from "@/src/how-to/how-to-en";
 import dynamic from "next/dynamic";
@@ -50,10 +52,11 @@ export async function getStaticProps({
   };
 }) {
   const item = routes[`/${params.tool}` as keyof typeof routes].item;
-  return { props: { item } };
+  const initialPremiumStatus = await fetchSubscriptionStatus();
+  return { props: { item, initialPremiumStatus } };
 }
 
-export default ({ item }: { item: data_type }) => {
+export default ({ item, initialPremiumStatus }: { item: data_type; initialPremiumStatus: boolean }) => {
   const router = useRouter();
   const { asPath } = router;
   const websiteSchema = {
@@ -63,6 +66,23 @@ export default ({ item }: { item: data_type }) => {
     description: item.description,
     url: `https://www.pdfequips.com${asPath}`,
   };
+  const [isPremium, setIsPremium] = useState(initialPremiumStatus);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const checkStatus = useCallback(async () => {
+    try {
+      const status = await fetchSubscriptionStatus(); // Function to fetch subscription status
+      setIsPremium(status);
+      setIsLoaded(true);
+    } catch (err) {
+      console.error("Error checking subscription status:", err);
+      setIsLoaded(true);
+
+    }
+  }, []);
+
+  useEffect(() => {
+    checkStatus();
+  }, []);
 
   const howToSchema = item.to === "/pdf-to-rtf" ? howToSchemas.PDFToRTFHowTo : howToSchemas.RTFToPDFHowTo;
   return (
@@ -77,6 +97,13 @@ export default ({ item }: { item: data_type }) => {
         />
         <meta name="description" content={item.description} />
         <link rel="icon" type="image/svg+xml" href="/images/icons/logo.svg" />
+        {isLoaded && !isPremium ?
+          <>
+            <meta name="google-adsense-account" content="ca-pub-7391414384206267" />
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7391414384206267"
+              cross-origin="anonymous"></script>
+          </>
+          : null}
         <OpenGraph
           ogUrl={`https://www.pdfequips.com${item.to}`}
           ogDescription={item.description}
@@ -110,7 +137,7 @@ export default ({ item }: { item: data_type }) => {
           imgSrc={item.to.replace("/", "")}
         />
       </div>
-      <Footer footer={footer} title={item.seoTitle.split("-")[1]} />
+      <Footer lang="" title={item.seoTitle.split("-")[1]} />
     </>
   );
 };

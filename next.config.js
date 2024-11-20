@@ -9,7 +9,7 @@ module.exports = {
   },
   assetPrefix: isProd ? "/pdf-rtf" : "",
   output: "export",
-  transpilePackages: ["pdfequips-navbar", "pdfequips-open-graph"],
+  transpilePackages: ["pdfequips-navbar", "pdfequips-open-graph", "fetch-subscription-status", "pdfequips-footer"],
   webpack: (config, { isServer }) => {
     // Only run this configuration on the client side
     if (!isServer) {
